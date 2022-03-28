@@ -19,13 +19,27 @@ body{
     grid-area: sidebar;
     background-color:#0ea5e9 ;
     padding:10px 10px 100px;
-    text-align: center;
     
-    color:white;
+    font-size: 25px;
+    color: white;
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
 }
+.sidebarTitle{
+    font:24px bold white;
+}
+.sidebarUpper h5{
+    margin: 5px 0px 5px;
+}
+.sidebarLower{
+    margin-top: 20px;
+}
+
+.sidebarLower h5{
+    margin: 5px 0px 5px;
+}
+
 
 
 
@@ -110,11 +124,15 @@ a{
     border-radius: 5%;
     min-width: 150px;
     min-height: 150px;
-    text-align: center;
+    text-align: right;
     background-color:  white;
-    padding:10px 8px 8px;
+    padding:10px 15px 8px;
 
 }
+.card h3 , .card p{
+    text-align: start;
+}
+
 
 .update{
     
