@@ -1,0 +1,157 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width:100%;
+    margin:0;
+    padding:0;
+    background-color: #d4d4d8;
+    display:grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: minmax(100px,150px) minmax(5fr,750px);
+    grid-template-areas:
+    "sidebar nav "
+    "sidebar content";
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color:#0ea5e9 ;
+    padding:10px 10px 100px;
+    text-align: center;
+    
+    color:white;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+
+.nav{
+    grid-area:nav;
+    background-color: white;
+    padding: 12px 20px;
+    width: 100%;
+}
+
+.uppernav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 0;
+}
+.rightUpper{
+
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-right: 50px;
+}
+.lowernav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin:0;
+    
+    align-items: center;
+}
+.leftLower{ display: flex;
+    flex-direction: row;
+    justify-content:stretch;
+    align-items: center;
+
+}
+.text{
+    margin-left: 15px;
+    text-align: center;
+}
+.rightLower{display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    padding-right: 50px;
+}
+a{
+    text-decoration: none;
+    padding:3px 5px;
+    border-radius: 8px;
+    background-color:#0ea5e9 ;
+    margin:10px 5px;
+    color:white;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 100%;
+    padding: 0 14px 10px 14px;
+    
+}
+.projectContainer{
+    margin: 16px;
+}
+
+.projects{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: repeat(3,1fr);
+    gap: 14px;
+    margin-top: 10px;
+
+   
+
+}
+.card{
+    
+    border-left: 8px solid rgb(224, 157, 68);
+    border-radius: 5%;
+    min-width: 150px;
+    min-height: 150px;
+    text-align: center;
+    background-color:  white;
+    padding:10px 8px 8px;
+
+}
+
+.update{
+    
+   display:grid;
+   grid-template-rows: 1fr 1fr;
+   text-align: center;
+   gap:50px;
+   margin-top: 16px;
+
+    
+}
+.announcement{
+    background-color: white;
+    
+    border-radius: 5%;
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+    height: 100%;
+    margin-top: 10px;
+    padding:5px 10px;
+    
+    
+}
+.news{
+    border-bottom: .5px solid darkgray;
+    padding:5px 10px;
+}
+
+.trending{
+    background-color: white;
+    height:60%;
+    margin-bottom: 20px;
+    border-radius: 5%;
+    padding:5px 2px;
+     
+}
+
+h3{
+    margin-bottom: 5px;
+}
